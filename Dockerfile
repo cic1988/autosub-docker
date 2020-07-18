@@ -22,7 +22,7 @@ RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 
 # install autosub
-RUN pip3 install git+https://github.com/BingLingGroup/autosub.git@origin
+RUN pip install git+https://github.com/BingLingGroup/autosub.git@origin
 
 ENTRYPOINT ["autosub"]
 
